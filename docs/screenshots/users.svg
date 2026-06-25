@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 780" width="1280" height="780">
+  <rect width="1280" height="780" fill="#F1F5F9"/>
+
+  <!-- Sidebar -->
+  <rect width="240" height="780" fill="#1A1A2E"/>
+  <rect x="16" y="16" width="208" height="56" rx="10" fill="#FF6B0015"/>
+  <path d="M36 32 L52 38 L52 50 C52 58 45 64 36 67 C27 64 20 58 20 50 L20 38 Z" fill="#FF6B00"/>
+  <path d="M29 48 L34 53 L43 43" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="40" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">SafeMine</text>
+  <text x="58" y="58" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">SAFETY PLATFORM</text>
+  <text x="36" y="113" font-family="Arial, sans-serif" font-size="13" fill="#64748B">⊞  Dashboard</text>
+  <text x="36" y="153" font-family="Arial, sans-serif" font-size="13" fill="#64748B">⚠  Incidents</text>
+  <text x="36" y="193" font-family="Arial, sans-serif" font-size="13" fill="#64748B">✓  Corrective Actions</text>
+  <rect x="12" y="208" width="216" height="40" rx="8" fill="#FF6B0020"/>
+  <rect x="20" y="220" width="4" height="16" rx="2" fill="#FF6B00"/>
+  <text x="36" y="233" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#FF6B00">👤  Users</text>
+  <text x="36" y="273" font-family="Arial, sans-serif" font-size="13" fill="#64748B">📊  Reports</text>
+  <rect x="12" y="700" width="216" height="60" rx="8" fill="#0F0F1E"/>
+  <circle cx="40" cy="730" r="16" fill="#FF6B00"/>
+  <text x="40" y="735" font-family="Arial" font-size="11" font-weight="700" fill="white" text-anchor="middle">SA</text>
+  <text x="64" y="724" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="white">System Admin</text>
+  <text x="64" y="740" font-family="Arial, sans-serif" font-size="10" fill="#64748B">ADMIN</text>
+
+  <!-- Top bar -->
+  <rect x="240" y="0" width="1040" height="64" fill="white"/>
+  <line x1="240" y1="64" x2="1280" y2="64" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="264" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1E293B">User Management</text>
+  <text x="264" y="50" font-family="Arial, sans-serif" font-size="12" fill="#64748B">8 registered users</text>
+  <rect x="1096" y="16" width="160" height="36" rx="8" fill="#FF6B00"/>
+  <text x="1176" y="39" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">+ Add User</text>
+
+  <!-- Role summary cards -->
+  <rect x="264" y="80" width="228" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="284" y="96" width="36" height="36" rx="8" fill="#FEE2E2"/>
+  <text x="302" y="119" font-family="Arial" font-size="18" text-anchor="middle">👑</text>
+  <text x="332" y="112" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1E293B">1</text>
+  <text x="332" y="130" font-family="Arial, sans-serif" font-size="11" fill="#64748B">Admins</text>
+
+  <rect x="504" y="80" width="228" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="524" y="96" width="36" height="36" rx="8" fill="#FFF3E8"/>
+  <text x="542" y="119" font-family="Arial" font-size="18" text-anchor="middle">🛡</text>
+  <text x="572" y="112" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1E293B">2</text>
+  <text x="572" y="130" font-family="Arial, sans-serif" font-size="11" fill="#64748B">Safety Officers</text>
+
+  <rect x="744" y="80" width="228" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="764" y="96" width="36" height="36" rx="8" fill="#EFF6FF"/>
+  <text x="782" y="119" font-family="Arial" font-size="18" text-anchor="middle">📋</text>
+  <text x="812" y="112" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1E293B">1</text>
+  <text x="812" y="130" font-family="Arial, sans-serif" font-size="11" fill="#64748B">Managers</text>
+
+  <rect x="984" y="80" width="244" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="1004" y="96" width="36" height="36" rx="8" fill="#DCFCE7"/>
+  <text x="1022" y="119" font-family="Arial" font-size="18" text-anchor="middle">👷</text>
+  <text x="1052" y="112" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1E293B">4</text>
+  <text x="1052" y="130" font-family="Arial, sans-serif" font-size="11" fill="#64748B">Workers</text>
+
+  <!-- Users table -->
+  <rect x="264" y="176" width="964" height="574" rx="12" fill="white"/>
+  <rect x="264" y="176" width="964" height="574" rx="12" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Table header -->
+  <rect x="264" y="176" width="964" height="40" rx="12" fill="#F8FAFC"/>
+  <rect x="264" y="200" width="964" height="16" fill="#F8FAFC"/>
+  <text x="308" y="201" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#64748B">EMPLOYEE</text>
+  <text x="520" y="201" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#64748B">EMP NUMBER</text>
+  <text x="650" y="201" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#64748B">ROLE</text>
+  <text x="790" y="201" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#64748B">DEPARTMENT</text>
+  <text x="960" y="201" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#64748B">STATUS</text>
+  <text x="1090" y="201" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#64748B">ACTIONS</text>
+
+  <!-- Row 1 - Admin -->
+  <line x1="264" y1="216" x2="1228" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+  <circle cx="290" cy="238" r="18" fill="#FF6B0020"/>
+  <text x="290" y="243" font-family="Arial" font-size="11" font-weight="700" fill="#FF6B00" text-anchor="middle">SA</text>
+  <text x="318" y="234" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E293B">System Administrator</text>
+  <text x="318" y="248" font-family="Arial, sans-serif" font-size="11" fill="#94A3B8">admin@safemine.co.za</text>
+  <text x="520" y="239" font-family="monospace" font-size="12" fill="#475569">EMP-001</text>
+  <rect x="650" y="226" width="56" height="22" rx="6" fill="#FEE2E2"/>
+  <text x="678" y="241" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#991B1B" text-anchor="middle">ADMIN</text>
+  <text x="790" y="239" font-family="Arial, sans-serif" font-size="12" fill="#475569">IT &amp; Systems</text>
+  <rect x="960" y="226" width="68" height="22" rx="6" fill="#DCFCE7"/>
+  <text x="994" y="241" font-family="Arial, sans-serif" font-size="11" fill="#14532D" text-anchor="middle">Active</text>
+  <rect x="1090" y="226" width="36" height="22" rx="6" fill="#EFF6FF"/>
+  <text x="1108" y="241" font-family="Arial, sans-serif" font-size="11" fill="#1D4ED8" text-anchor="middle">✏</text>
+  <rect x="1132" y="226" width="36" height="22" rx="6" fill="#FFF1F2"/>
+  <text x="1150" y="241" font-family="Arial, sans-serif" font-size="11" fill="#BE123C" text-anchor="middle">🗑</text>
+
+  <!-- Row 2 -->
+  <line x1="264" y1="260" x2="1228" y2="260" stroke="#F1F5F9" stroke-width="1"/>
+  <circle cx="290" cy="282" r="18" fill="#FFF3E810"/>
+  <rect x="272" y="264" width="36" height="36" rx="18" fill="#FFF3E8"/>
+  <text x="290" y="287" font-family="Arial" font-size="11" font-weight="700" fill="#F97316" text-anchor="middle">SO</text>
+  <text x="318" y="278" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E293B">Sarah Mthembu</text>
+  <text x="318" y="292" font-family="Arial, sans-serif" font-size="11" fill="#94A3B8">safety@safemine.co.za</text>
+  <text x="520" y="283" font-family="monospace" font-size="12" fill="#475569">EMP-002</text>
+  <rect x="650" y="270" width="104" height="22" rx="6" fill="#FFF3E8"/>
+  <text x="702" y="285" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#9A3412" text-anchor="middle">SAFETY OFFICER</text>
+  <text x="790" y="283" font-family="Arial, sans-serif" font-size="12" fill="#475569">Health &amp; Safety</text>
+  <rect x="960" y="270" width="68" height="22" rx="6" fill="#DCFCE7"/>
+  <text x="994" y="285" font-family="Arial, sans-serif" font-size="11" fill="#14532D" text-anchor="middle">Active</text>
+  <rect x="1090" y="270" width="36" height="22" rx="6" fill="#EFF6FF"/>
+  <text x="1108" y="285" font-family="Arial, sans-serif" font-size="11" fill="#1D4ED8" text-anchor="middle">✏</text>
+  <rect x="1132" y="270" width="36" height="22" rx="6" fill="#FFF1F2"/>
+  <text x="1150" y="285" font-family="Arial, sans-serif" font-size="11" fill="#BE123C" text-anchor="middle">🗑</text>
+
+  <!-- Row 3 -->
+  <line x1="264" y1="304" x2="1228" y2="304" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="272" y="308" width="36" height="36" rx="18" fill="#EFF6FF"/>
+  <text x="290" y="331" font-family="Arial" font-size="11" font-weight="700" fill="#3B82F6" text-anchor="middle">MG</text>
+  <text x="318" y="322" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E293B">David Mahlangu</text>
+  <text x="318" y="336" font-family="Arial, sans-serif" font-size="11" fill="#94A3B8">manager@safemine.co.za</text>
+  <text x="520" y="327" font-family="monospace" font-size="12" fill="#475569">EMP-003</text>
+  <rect x="650" y="314" width="72" height="22" rx="6" fill="#EFF6FF"/>
+  <text x="686" y="329" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#1D4ED8" text-anchor="middle">MANAGER</text>
+  <text x="790" y="327" font-family="Arial, sans-serif" font-size="12" fill="#475569">Operations</text>
+  <rect x="960" y="314" width="68" height="22" rx="6" fill="#DCFCE7"/>
+  <text x="994" y="329" font-family="Arial, sans-serif" font-size="11" fill="#14532D" text-anchor="middle">Active</text>
+  <rect x="1090" y="314" width="36" height="22" rx="6" fill="#EFF6FF"/>
+  <text x="1108" y="329" font-family="Arial, sans-serif" font-size="11" fill="#1D4ED8" text-anchor="middle">✏</text>
+  <rect x="1132" y="314" width="36" height="22" rx="6" fill="#FFF1F2"/>
+  <text x="1150" y="329" font-family="Arial, sans-serif" font-size="11" fill="#BE123C" text-anchor="middle">🗑</text>
+
+  <!-- Row 4 -->
+  <line x1="264" y1="348" x2="1228" y2="348" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="272" y="352" width="36" height="36" rx="18" fill="#DCFCE7"/>
+  <text x="290" y="375" font-family="Arial" font-size="11" font-weight="700" fill="#16A34A" text-anchor="middle">JD</text>
+  <text x="318" y="366" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E293B">John Dube</text>
+  <text x="318" y="380" font-family="Arial, sans-serif" font-size="11" fill="#94A3B8">worker@safemine.co.za</text>
+  <text x="520" y="371" font-family="monospace" font-size="12" fill="#475569">EMP-004</text>
+  <rect x="650" y="358" width="64" height="22" rx="6" fill="#DCFCE7"/>
+  <text x="682" y="373" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#14532D" text-anchor="middle">WORKER</text>
+  <text x="790" y="371" font-family="Arial, sans-serif" font-size="12" fill="#475569">Mining — Shaft 2</text>
+  <rect x="960" y="358" width="68" height="22" rx="6" fill="#DCFCE7"/>
+  <text x="994" y="373" font-family="Arial, sans-serif" font-size="11" fill="#14532D" text-anchor="middle">Active</text>
+  <rect x="1090" y="358" width="36" height="22" rx="6" fill="#EFF6FF"/>
+  <text x="1108" y="373" font-family="Arial, sans-serif" font-size="11" fill="#1D4ED8" text-anchor="middle">✏</text>
+  <rect x="1132" y="358" width="36" height="22" rx="6" fill="#FFF1F2"/>
+  <text x="1150" y="373" font-family="Arial, sans-serif" font-size="11" fill="#BE123C" text-anchor="middle">🗑</text>
+
+  <!-- Row 5 - Inactive -->
+  <line x1="264" y1="392" x2="1228" y2="392" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="272" y="396" width="36" height="36" rx="18" fill="#F1F5F9"/>
+  <text x="290" y="419" font-family="Arial" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="middle">TN</text>
+  <text x="318" y="410" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">Thabo Nkosi</text>
+  <text x="318" y="424" font-family="Arial, sans-serif" font-size="11" fill="#CBD5E1">tnkosi@safemine.co.za</text>
+  <text x="520" y="415" font-family="monospace" font-size="12" fill="#CBD5E1">EMP-005</text>
+  <rect x="650" y="402" width="64" height="22" rx="6" fill="#F1F5F9"/>
+  <text x="682" y="417" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#94A3B8" text-anchor="middle">WORKER</text>
+  <text x="790" y="415" font-family="Arial, sans-serif" font-size="12" fill="#CBD5E1">Open Pit</text>
+  <rect x="960" y="402" width="76" height="22" rx="6" fill="#FEE2E2"/>
+  <text x="998" y="417" font-family="Arial, sans-serif" font-size="11" fill="#991B1B" text-anchor="middle">Inactive</text>
+  <rect x="1090" y="402" width="36" height="22" rx="6" fill="#EFF6FF"/>
+  <text x="1108" y="417" font-family="Arial, sans-serif" font-size="11" fill="#1D4ED8" text-anchor="middle">✏</text>
+  <rect x="1132" y="402" width="36" height="22" rx="6" fill="#FFF1F2"/>
+  <text x="1150" y="417" font-family="Arial, sans-serif" font-size="11" fill="#BE123C" text-anchor="middle">🗑</text>
+
+  <!-- Row 6 -->
+  <line x1="264" y1="436" x2="1228" y2="436" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="272" y="440" width="36" height="36" rx="18" fill="#DCFCE7"/>
+  <text x="290" y="463" font-family="Arial" font-size="11" font-weight="700" fill="#16A34A" text-anchor="middle">MS</text>
+  <text x="318" y="454" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1E293B">Mike Sithole</text>
+  <text x="318" y="468" font-family="Arial, sans-serif" font-size="11" fill="#94A3B8">msithole@safemine.co.za</text>
+  <text x="520" y="459" font-family="monospace" font-size="12" fill="#475569">EMP-006</text>
+  <rect x="650" y="446" width="64" height="22" rx="6" fill="#DCFCE7"/>
+  <text x="682" y="461" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#14532D" text-anchor="middle">WORKER</text>
+  <text x="790" y="459" font-family="Arial, sans-serif" font-size="12" fill="#475569">Maintenance</text>
+  <rect x="960" y="446" width="68" height="22" rx="6" fill="#DCFCE7"/>
+  <text x="994" y="461" font-family="Arial, sans-serif" font-size="11" fill="#14532D" text-anchor="middle">Active</text>
+  <rect x="1090" y="446" width="36" height="22" rx="6" fill="#EFF6FF"/>
+  <text x="1108" y="461" font-family="Arial, sans-serif" font-size="11" fill="#1D4ED8" text-anchor="middle">✏</text>
+  <rect x="1132" y="446" width="36" height="22" rx="6" fill="#FFF1F2"/>
+  <text x="1150" y="461" font-family="Arial, sans-serif" font-size="11" fill="#BE123C" text-anchor="middle">🗑</text>
+</svg>
