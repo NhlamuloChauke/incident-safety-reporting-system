@@ -66,13 +66,30 @@
 
 ## Getting Started
 
-### Prerequisites
+### Docker (recommended)
 
-- Java 17+
-- Maven 3.9+
-- Node 20+ / npm
+```bash
+cp .env.example .env        # edit secrets if needed
+docker-compose up --build
+```
 
-### Backend
+| Service | URL |
+|---------|-----|
+| Frontend | http://localhost |
+| Backend API | http://localhost:8080 |
+| Swagger UI | http://localhost:8080/swagger-ui.html |
+| PostgreSQL | localhost:5432 |
+
+Stop everything: `docker-compose down`  
+Wipe database: `docker-compose down -v`
+
+---
+
+### Local Development
+
+**Prerequisites:** Java 17+, Maven 3.9+, Node 20+
+
+**Backend** (uses H2 in-memory DB by default)
 
 ```bash
 cd backend
@@ -83,7 +100,7 @@ mvn spring-boot:run
 - Swagger UI → `http://localhost:8080/swagger-ui.html`
 - H2 Console → `http://localhost:8080/h2-console`
 
-### Frontend
+**Frontend** (proxies `/api` to `localhost:8080`)
 
 ```bash
 cd frontend

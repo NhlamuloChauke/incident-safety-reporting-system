@@ -1,0 +1,66 @@
+services:
+
+  # ── PostgreSQL ───────────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: safemine-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       ${DB_NAME:-safemine}
+      POSTGRES_USER:     ${DB_USERNAME:-safemine}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-safemine}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-safemine}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Spring Boot Backend ──────────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: safemine-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST:      postgres
+      DB_PORT:      5432
+      DB_NAME:      ${DB_NAME:-safemine}
+      DB_USERNAME:  ${DB_USERNAME:-safemine}
+      DB_PASSWORD:  ${DB_PASSWORD:-safemine}
+      JWT_SECRET:   ${JWT_SECRET:-SafeMineDockerSecretKeyPleaseChangeInProduction!}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost}
+      MAIL_HOST:    ${MAIL_HOST:-localhost}
+      MAIL_PORT:    ${MAIL_PORT:-25}
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/v3/api-docs > /dev/null || exit 1"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+  # ── Angular Frontend (nginx) ─────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: safemine-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "80:80"
+
+volumes:
+  postgres_data:
+    driver: local

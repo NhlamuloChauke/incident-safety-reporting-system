@@ -23,3 +23,6 @@ docs/package.json
 .idea/
 *.iml
 .vscode/
+
+# Docker secrets
+.env

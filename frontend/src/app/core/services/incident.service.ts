@@ -4,7 +4,7 @@ import { DashboardStats, Incident, IncidentRequest } from '../../models/incident
 
 @Injectable({ providedIn: 'root' })
 export class IncidentService {
-  private readonly API = 'http://localhost:8080/api';
+  private readonly API = '/api';
 
   constructor(private http: HttpClient) {}
 

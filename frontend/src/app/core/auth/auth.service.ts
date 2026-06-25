@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private readonly API = 'http://localhost:8080/api/auth';
+  private readonly API = '/api/auth';
   private currentUserSubject = new BehaviorSubject<LoginResponse | null>(this.loadUser());
 
   currentUser$ = this.currentUserSubject.asObservable();
