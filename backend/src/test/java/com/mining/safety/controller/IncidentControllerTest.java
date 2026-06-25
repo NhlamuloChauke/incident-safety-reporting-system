@@ -129,12 +129,12 @@ class IncidentControllerTest extends BaseIntegrationTest {
     }
 
     @Test
-    @DisplayName("Create incident without auth returns 403")
+    @DisplayName("Create incident without auth returns 401")
     void createIncident_noToken_returns403() throws Exception {
         mockMvc.perform(post("/api/incidents")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(buildIncidentRequest())))
-                .andExpect(status().isForbidden());
+                .andExpect(status().isUnauthorized());
     }
 
     // ─── GET INCIDENTS ───────────────────────────────────────────

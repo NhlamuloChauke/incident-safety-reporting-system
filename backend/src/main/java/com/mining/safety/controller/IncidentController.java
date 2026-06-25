@@ -7,6 +7,7 @@ import com.mining.safety.service.IncidentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,6 +38,7 @@ public class IncidentController {
     }
 
     @PatchMapping("/{id}/status")
+    @PreAuthorize("hasAnyRole('SAFETY_OFFICER','MANAGER','ADMIN')")
     public ResponseEntity<IncidentResponse> updateStatus(@PathVariable Long id,
                                                           @RequestBody Map<String, String> body) {
         IncidentStatus status = IncidentStatus.valueOf(body.get("status"));
@@ -44,6 +46,7 @@ public class IncidentController {
     }
 
     @PatchMapping("/{id}/root-cause")
+    @PreAuthorize("hasAnyRole('SAFETY_OFFICER','MANAGER','ADMIN')")
     public ResponseEntity<IncidentResponse> updateRootCause(@PathVariable Long id,
                                                              @RequestBody Map<String, String> body) {
         return ResponseEntity.ok(incidentService.updateRootCause(id, body.get("rootCause")));

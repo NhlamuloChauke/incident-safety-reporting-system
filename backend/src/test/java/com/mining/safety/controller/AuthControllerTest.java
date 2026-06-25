@@ -113,9 +113,9 @@ class AuthControllerTest extends BaseIntegrationTest {
     }
 
     @Test
-    @DisplayName("Accessing protected endpoint without token returns 403")
+    @DisplayName("Accessing protected endpoint without token returns 401")
     void protectedEndpoint_noToken_returns403() throws Exception {
         mockMvc.perform(post("/api/incidents"))
-                .andExpect(status().isForbidden());
+                .andExpect(status().isUnauthorized());
     }
 }

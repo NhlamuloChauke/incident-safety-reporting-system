@@ -55,10 +55,10 @@ class UserControllerTest extends BaseIntegrationTest {
     }
 
     @Test
-    @DisplayName("Unauthenticated request to get users returns 403")
+    @DisplayName("Unauthenticated request to get users returns 401")
     void getAllUsers_noToken_returns403() throws Exception {
         mockMvc.perform(get("/api/users"))
-                .andExpect(status().isForbidden());
+                .andExpect(status().isUnauthorized());
     }
 
     // ─── CREATE USER ─────────────────────────────────────────────

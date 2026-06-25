@@ -113,9 +113,9 @@ class DashboardControllerTest extends BaseIntegrationTest {
     }
 
     @Test
-    @DisplayName("Dashboard stats without token returns 403")
+    @DisplayName("Dashboard stats without token returns 401")
     void getDashboardStats_noToken_returns403() throws Exception {
         mockMvc.perform(get("/api/dashboard/stats"))
-                .andExpect(status().isForbidden());
+                .andExpect(status().isUnauthorized());
     }
 }
