@@ -193,5 +193,5 @@ ng build --configuration production
 ---
 
 <div align="center">
-  <sub>Built with ❤️ for mine safety · NCPC-SA / CSIR · SafeMine v1.0</sub>
+  <sub>Built with ❤️ for mine safety· SafeMine v1.0</sub>
 </div>
